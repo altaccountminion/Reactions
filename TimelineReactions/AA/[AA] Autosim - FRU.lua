@@ -394,12 +394,23 @@ local tbl =
 							version = 2.1,
 						},
 					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorViper4_Hotbar_Slither",
+							uuid = "f4c9a2d9-f590-2c28-8ea6-e314bd7e05ae",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
 				},
 				conditions = 
 				{
 				},
 				mechanicTime = 145.6,
-				name = "ingress",
+				name = "dash in",
 				timelineIndex = 35,
 				timerOffset = -0.5,
 				uuid = "26241946-9687-3fa0-b3ac-a8b74fd49170",
@@ -591,6 +602,37 @@ local tbl =
 				timerEndOffset = 12,
 				timerStartOffset = -5,
 				uuid = "08be34f4-f5d9-c3e7-b9da-718e865c9033",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorViper4_Hotbar_Slither",
+							uuid = "1542f904-2bfc-763a-89e1-c2509d0c4783",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 276.1,
+				name = "dash in",
+				timeRange = true,
+				timelineIndex = 62,
+				timerEndOffset = 2,
+				timerStartOffset = -1,
+				uuid = "8434ef19-3150-fb5c-ba38-fcb25a915cee",
 				version = 2,
 			},
 		},
