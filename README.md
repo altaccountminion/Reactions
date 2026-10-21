@@ -61,3 +61,7 @@ If you inherit Anyone's main FRU profile (`store\anyone\fru\fru`) instead, it pu
 - **RPR**: the most tested. Performing fairly well, with some minor issues in the P4 cleave.
 - **SAM**: untested, and probably weak given current limitations. Avoid it for now.
 - **BLM**: untested. It should work in theory. You may want to raise unexpected movement a bit in the ACR's autosim settings.
+
+**Experimental: P4 targeting on Gaia (2026-10-20)**
+
+Once Gaia spawns in P4, every DPS job now treats Gaia as its only DoT target, which keeps the rotation on her instead of drifting to Ryne. Before, only Reaper did this. BLM is the one exception: it still tracks Ryne as a second target so its AoE Thunder covers both bosses. Ryne still counts for cleave and AoE. This is new and hasn't been tested in a pull yet, so please report it if P4 targeting or DoTs look wrong.
