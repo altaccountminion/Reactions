@@ -34,12 +34,18 @@ Download the files and put them in `MINIONAPP\Bots\FFXIVMinion64\LuaMods\TensorR
 
 A standalone AutoSim timeline for Futures Rewritten (fru 1.0.5). It doesn't inherit anything.
 
+**What it covers**
+
+This profile is focused on running the ACR4 rotation well through the fight: AutoSim timings, downtime, raid buff windows and target slots. It isn't a full automation profile, and **it doesn't auto-target in the intermission.** The ACR only plans around what you have targeted there (your current Light Crystal, then the Ice Veil), so pick targets yourself, or use Anyone's targeting (option B below).
+
 **Setup**
 
 1. Open your own FRU timeline profile.
 2. Inherit `AA\[AA] Autosim - FRU`.
 
-**Optional: if you also want Anyone's FRU reactions**
+Then pick one of these if you also want Anyone's FRU reactions.
+
+**Option A: Anyone's modules, no auto-targeting**
 
 3. Inherit these Anyone modules:
    - `store\anyone\fru\modules\core`
@@ -51,7 +57,13 @@ A standalone AutoSim timeline for Futures Rewritten (fru 1.0.5). It doesn't inhe
    - `[Core] Set Toggles` (in core)
    - `[VPR] Toggle Reawaken` (in draws)
 
-If you inherit Anyone's main FRU profile (`store\anyone\fru\fru`) instead, it pulls in the optimization module too. You'll then need to disable every toggle and hold reaction in it, plus the two above.
+**Option B: the full targeting suite**
+
+If you want Anyone's auto-targeting too, such as the intermission crystal targeting:
+
+3. Inherit Anyone's complete FRU profile, `store\anyone\fru\fru`. It includes every module, optimization too.
+4. Disable the holds, toggles and potion uses inside it, because they fight the autosim. Most are in the optimization module. Keep its targeting reactions enabled, for example `[All] Target Nearest On Spawn`, `[Melee] Auto-Target`, `[Ranged] Auto-Target` and `[All] Target Ice Re` for the intermission.
+5. Disable `[Core] Set Toggles` and `[VPR] Toggle Reawaken`, as in option A.
 
 **Upgrading from a manual install?** If you put `[AA] Autosim - FRU.lua` straight into `TimelineReactions\` before, delete that copy. Then point your inheritance at `AA\[AA] Autosim - FRU` so you get updates.
 
